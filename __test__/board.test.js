@@ -20,7 +20,7 @@ test('Probando método findNeighbors', () => {
   const rows = Math.floor(Math.random() * (10 - 1)) + 1
   const cols = Math.floor(Math.random() * (10 - 1)) + 1
   const board = new Board(rows, cols)
-  expect(board.findNeighbors(0, 0)).not.toThrowError()
+  expect(board.findNeighbors(0, 0)).toBe(undefined)
 })
 
 test('Probando método generateBoard', () => {
